@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.json("Hello Guys");
 });
 
-/* app.get("/user", getUser); */
+app.get("/user", getUser);
 
 app.listen(5000, () => {
   console.log("Server On");
