@@ -1,4 +1,3 @@
-import axios from "axios";
 import express from "express";
 import { getUser } from "./controller";
 

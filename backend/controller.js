@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const getUser = async (req, res) => {
   async (req, res) => {
     try {
