@@ -1,5 +1,5 @@
 import express from "express";
-import { getUser } from "./controller.js";
+import { getUser, login } from "./controller.js";
 import dotenv from "dotenv";
 import connectToMongoDB from "./db/dbConfig.js";
 
@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/user", getUser);
+app.post("/login", login);
 
 app.listen(process.env.POST, () => {
   console.log("Server On");
