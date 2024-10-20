@@ -1,7 +1,10 @@
 import express from "express";
-import { getUser } from "./controller";
+import { getUser } from "./controller.js";
+import dotenv from "dotenv";
 
 const app = express();
+
+dotenv.config();
 
 app.get("/", (req, res) => {
   res.json("Hello Guys");
@@ -9,6 +12,6 @@ app.get("/", (req, res) => {
 
 app.get("/user", getUser);
 
-app.listen(5000, () => {
+app.listen(process.env.POST, () => {
   console.log("Server On");
 });
