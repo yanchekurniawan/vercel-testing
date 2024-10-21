@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "backend/**/*.js": {
+    "backend/controller.js": {
       "maxDuration": 60
     }
   },
