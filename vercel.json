@@ -11,5 +11,10 @@
       "src": "/(.*)",
       "dest": "backend/index.js"
     }
-  ]
+  ],
+  "function": {
+    "backend/**/*": {
+      "maxDuration": 60
+    }
+  }
 }
