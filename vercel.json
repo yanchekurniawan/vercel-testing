@@ -12,7 +12,7 @@
       "dest": "backend/index.js"
     }
   ],
-  "function": {
+  "functions": {
     "backend/**/*": {
       "maxDuration": 60
     }
