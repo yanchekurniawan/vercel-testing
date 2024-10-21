@@ -1,4 +1,4 @@
-import axios from "axios";
+/* import axios from "axios";
 import User from "./models/userModel.js";
 
 export const getUser = async (req, res) => {
@@ -47,3 +47,4 @@ export const login = async (req, res) => {
     });
   } catch (error) {}
 };
+ */

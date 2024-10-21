@@ -2,7 +2,7 @@ import express from "express";
 import { getUser, login } from "./controller.js";
 import { PrismaClient } from "@prisma/client";
 import dotenv from "dotenv";
-import connectToMongoDB from "./db/dbConfig.js";
+/* import connectToMongoDB from "./db/dbConfig.js"; */
 
 const app = express();
 const prisma = new PrismaClient();
@@ -27,5 +27,5 @@ app.post("/login", login); */
 
 app.listen(process.env.POST, () => {
   console.log("Server On");
-  connectToMongoDB();
+  /*   connectToMongoDB(); */
 });
